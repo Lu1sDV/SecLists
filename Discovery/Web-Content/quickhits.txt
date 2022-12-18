@@ -2556,3 +2556,5 @@
 /actuator/trace
 /jolokia
 /list
+/_fragment
+/_profiler
