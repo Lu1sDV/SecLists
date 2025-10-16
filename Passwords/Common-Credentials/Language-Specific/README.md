@@ -1,3 +1,6 @@
+# \*\_Pwdb\_\*
+The "Pwdb" wordlists are from [the Pwdb-Public project](https://github.com/ignis-sec/Pwdb-Public).
+
 # Spanish
 
 - `Spanish_1000-common-usernames-and-passwords.txt`
@@ -22,3 +25,9 @@ Source: https://github.com/hackingyseguridad/diccionarios
 - `Chinese-common-password-list-top-1000000.txt`
 
 Source: https://github.com/NihaoKangkang/Chinese-Common-Password-List
+
+# French
+- `French-common-password-list-top-20000.txt`
+- `French-common-password-list-top-5000.txt`
+- 
+Source: https://github.com/tarraschk/richelieu
