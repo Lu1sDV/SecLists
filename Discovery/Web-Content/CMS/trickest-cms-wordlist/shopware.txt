@@ -7839,7 +7839,6 @@ tests/unit/Core/Framework/Store/InAppPurchases/Services/InAppPurchaseUpdaterTest
 tests/unit/Core/Framework/Store/Authentication/LocaleProviderTest.php
 tests/unit/Core/Framework/Store/Authentication/FrwRequestOptionsProviderTest.php
 tests/unit/Core/Framework/Store/Authentication/StoreRequestOptionsProviderTest.php
-tests/unit/Core/Framework/Store/Session/StorefrontSessionStorageFactoryTest.php
 tests/unit/Core/Framework/Store/Struct/PermissionCollectionTest.php
 tests/unit/Core/Framework/Store/Struct/ReviewStructTest.php
 tests/unit/Core/Framework/Store/Struct/ExtensionStructTest.php
@@ -8212,6 +8211,7 @@ tests/unit/Elasticsearch/Framework/Indexing/ElasticsearchIndexerTest.php
 tests/unit/Elasticsearch/Framework/Indexing/CreateAliasTaskTest.php
 tests/unit/Elasticsearch/Framework/Indexing/ElasticsearchIndexingMessageTest.php
 tests/unit/Elasticsearch/Framework/Indexing/IndexMappingProviderTest.php
+tests/unit/Elasticsearch/Framework/Subscriber/InvalidateExpiredCacheSubscriberTest.php
 tests/unit/Elasticsearch/Framework/ElasticsearchOutdatedIndexDetectorTest.php
 tests/unit/Elasticsearch/Framework/Command/ElasticsearchIndexingCommandTest.php
 tests/unit/Elasticsearch/Framework/Command/ElasticsearchUpdateMappingCommandTest.php
@@ -10066,6 +10066,7 @@ tests/acceptance/helpers/locale-helpers.ts
 tests/acceptance/helpers/recaptcha-helpers.ts
 tests/acceptance/tsconfig.json
 tests/acceptance/scripts/runNpmAudit.ts
+tests/acceptance/scripts/tsconfig.json
 tests/acceptance/package-lock.json
 tests/acceptance/.prettierrc
 tests/acceptance/package.json
@@ -10332,6 +10333,7 @@ src/Administration/Resources/app/administration/technical-docs/01-overview/02-he
 src/Administration/Resources/app/administration/technical-docs/01-overview/01-what-is-the-administration.md
 src/Administration/Resources/app/administration/technical-docs/04-data-layer/02-repository-pattern.md
 src/Administration/Resources/app/administration/technical-docs/04-data-layer/04-criteria.md
+src/Administration/Resources/app/administration/technical-docs/04-data-layer/08-inheritance-system.md
 src/Administration/Resources/app/administration/technical-docs/04-data-layer/07-notifications.md
 src/Administration/Resources/app/administration/technical-docs/04-data-layer/03-api-services.md
 src/Administration/Resources/app/administration/technical-docs/04-data-layer/01-overview.md
@@ -12026,6 +12028,9 @@ src/Administration/Resources/app/administration/src/module/sw-settings-usage-dat
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/snippet/en.json
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/snippet/de.json
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/index.ts
+src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-settings-usage-data-consent-modal-data-provider/index.ts
+src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-settings-usage-data-consent-modal-data-provider/sw-settings-usage-data-consent-modal-data-provider.html.twig
+src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-settings-usage-data-consent-modal-data-provider/sw-settings-usage-data-consent-modal-data-provider.spec.js
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-usage-data-consent-banner/sw-usage-data-consent-banner.scss
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-usage-data-consent-banner/assets/data-consent-background.webp
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-usage-data-consent-banner/index.ts
@@ -15094,6 +15099,7 @@ src/Administration/Resources/app/administration/scripts/generate-position-identi
 src/Administration/Resources/app/administration/scripts/codemods/twig-feature-flag-removal/index.ts
 src/Administration/Resources/app/administration/scripts/codemods/twig-block-removal/index.ts
 src/Administration/Resources/app/administration/scripts/codemods/js-vue3-feature-flag-removal/index.ts
+src/Administration/Resources/app/administration/scripts/tsconfig.json
 src/Administration/Resources/app/administration/scripts/generate-data-set-list/index.ts
 src/Administration/Resources/app/administration/scripts/generate-block-list/generate-blocks-list.spec.ts
 src/Administration/Resources/app/administration/scripts/generate-block-list/index.ts
@@ -19984,6 +19990,7 @@ src/Core/Framework/Api/ApiDefinition/ApiTypeNotFoundException.php
 src/Core/Framework/Api/ApiDefinition/ApiDefinitionGeneratorNotFoundException.php
 src/Core/Framework/Api/ApiDefinition/DefinitionService.php
 src/Core/Framework/Api/ApiDefinition/ApiDefinitionGeneratorInterface.php
+src/Core/Framework/Api/Event/InvalidateExpiredCacheRequestEvent.php
 src/Core/Framework/Api/Response/JsonApiResponse.php
 src/Core/Framework/Api/Response/ResponseFactoryRegistry.php
 src/Core/Framework/Api/Response/Type/Api/JsonType.php
@@ -20113,7 +20120,6 @@ src/Core/Framework/Store/Authentication/StoreRequestOptionsProvider.php
 src/Core/Framework/Store/Authentication/LocaleProvider.php
 src/Core/Framework/Store/Helper/PermissionCategorization.php
 src/Core/Framework/Store/InAppPurchase.php
-src/Core/Framework/Store/Session/StorefrontSessionStorageFactory.php
 src/Core/Framework/Store/Struct/PluginCategoryCollection.php
 src/Core/Framework/Store/Struct/AccessTokenStruct.php
 src/Core/Framework/Store/Struct/LicenseStruct.php
@@ -23023,6 +23029,7 @@ src/Elasticsearch/Framework/Indexing/IndexMappingProvider.php
 src/Elasticsearch/Framework/Indexing/IndexerOffset.php
 src/Elasticsearch/Framework/Indexing/CreateAliasTask.php
 src/Elasticsearch/Framework/Indexing/IndexMappingUpdater.php
+src/Elasticsearch/Framework/Indexing/IndexManager.php
 src/Elasticsearch/Framework/Indexing/IndexingDto.php
 src/Elasticsearch/Framework/Indexing/Scripts/cheapest_price_percentage_filter.groovy
 src/Elasticsearch/Framework/Indexing/Scripts/cheapest_price_filter.groovy
@@ -23030,6 +23037,7 @@ src/Elasticsearch/Framework/Indexing/Scripts/numeric_translated_field_sorting.gr
 src/Elasticsearch/Framework/Indexing/Scripts/cheapest_price.groovy
 src/Elasticsearch/Framework/Indexing/Scripts/cheapest_price_percentage.groovy
 src/Elasticsearch/Framework/Indexing/Scripts/translated_field_sorting.groovy
+src/Elasticsearch/Framework/Subscriber/InvalidateExpiredCacheSubscriber.php
 src/Elasticsearch/Framework/ClientFactory.php
 src/Elasticsearch/Framework/ElasticsearchOutdatedIndexDetector.php
 src/Elasticsearch/Framework/ElasticsearchFieldBuilder.php
