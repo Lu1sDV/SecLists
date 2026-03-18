@@ -1394,6 +1394,7 @@ tests/Umbraco.Tests.UnitTests/Umbraco.Core/ShortStringHelper/CmsHelperCasingTest
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/ShortStringHelper/StringExtensionsTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/ShortStringHelper/MockShortStringHelper.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/AttemptTests.cs
+tests/Umbraco.Tests.UnitTests/Umbraco.Core/Strings/DefaultUrlSegmentProviderTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/CoreXml/FrameworkXmlTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/Scheduling/ContentVersionCleanupTest.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/EnumerableExtensionsTests.cs
@@ -1578,6 +1579,7 @@ tests/Umbraco.Tests.UnitTests/Umbraco.Infrastructure/Persistence/NPocoTests/NPoc
 tests/Umbraco.Tests.UnitTests/Umbraco.Infrastructure/Persistence/NPocoTests/NPocoSqlExtensionsTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Infrastructure/Persistence/NPocoTests/NPocoSqlTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Infrastructure/Persistence/Repositories/SimilarNodeNameTests.cs
+tests/Umbraco.Tests.UnitTests/Umbraco.Infrastructure/Persistence/Repositories/DocumentRepositoryTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Infrastructure/Persistence/Mappers/PropertyTypeMapperTest.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Infrastructure/Persistence/Mappers/RelationTypeMapperTest.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Infrastructure/Persistence/Mappers/LanguageMapperTest.cs
