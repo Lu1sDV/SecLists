@@ -20002,6 +20002,12 @@ Nop.Web.Framework/Migrations/UpgradeTo500/SettingMigration.cs
 Migrations/UpgradeTo500/SettingMigration.cs
 UpgradeTo500/SettingMigration.cs
 SettingMigration.cs
+src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo500/AppSettingsMigration.cs
+Presentation/Nop.Web.Framework/Migrations/UpgradeTo500/AppSettingsMigration.cs
+Nop.Web.Framework/Migrations/UpgradeTo500/AppSettingsMigration.cs
+Migrations/UpgradeTo500/AppSettingsMigration.cs
+UpgradeTo500/AppSettingsMigration.cs
+AppSettingsMigration.cs
 src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo500/LocalizationMigration.cs
 Presentation/Nop.Web.Framework/Migrations/UpgradeTo500/LocalizationMigration.cs
 Nop.Web.Framework/Migrations/UpgradeTo500/LocalizationMigration.cs
@@ -27604,6 +27610,10 @@ src/Plugins/Nop.Plugin.ExchangeRate.EcbExchange/EcbExchangeRateSettings.cs
 Plugins/Nop.Plugin.ExchangeRate.EcbExchange/EcbExchangeRateSettings.cs
 Nop.Plugin.ExchangeRate.EcbExchange/EcbExchangeRateSettings.cs
 EcbExchangeRateSettings.cs
+src/Plugins/Nop.Plugin.Misc.Polls/Notes.txt
+Plugins/Nop.Plugin.Misc.Polls/Notes.txt
+Nop.Plugin.Misc.Polls/Notes.txt
+Notes.txt
 src/Plugins/Nop.Plugin.Misc.Polls/Nop.Plugin.Misc.Polls.csproj
 Plugins/Nop.Plugin.Misc.Polls/Nop.Plugin.Misc.Polls.csproj
 Nop.Plugin.Misc.Polls/Nop.Plugin.Misc.Polls.csproj
@@ -31575,6 +31585,10 @@ src/Plugins/Nop.Plugin.Widgets.Swiper/SwiperSettings.cs
 Plugins/Nop.Plugin.Widgets.Swiper/SwiperSettings.cs
 Nop.Plugin.Widgets.Swiper/SwiperSettings.cs
 SwiperSettings.cs
+src/Plugins/Nop.Plugin.Misc.RFQ/Notes.txt
+Plugins/Nop.Plugin.Misc.RFQ/Notes.txt
+Nop.Plugin.Misc.RFQ/Notes.txt
+Notes.txt
 src/Plugins/Nop.Plugin.Misc.RFQ/Domains/RequestQuote.cs
 Plugins/Nop.Plugin.Misc.RFQ/Domains/RequestQuote.cs
 Nop.Plugin.Misc.RFQ/Domains/RequestQuote.cs
@@ -33303,6 +33317,10 @@ Plugins/Nop.Plugin.Misc.Omnisend/Services/OmnisendEventsService.cs
 Nop.Plugin.Misc.Omnisend/Services/OmnisendEventsService.cs
 Services/OmnisendEventsService.cs
 OmnisendEventsService.cs
+src/Plugins/Nop.Plugin.Misc.AzureBlob/Notes.txt
+Plugins/Nop.Plugin.Misc.AzureBlob/Notes.txt
+Nop.Plugin.Misc.AzureBlob/Notes.txt
+Notes.txt
 src/Plugins/Nop.Plugin.Misc.AzureBlob/Infrastructure/PluginNopStartup.cs
 Plugins/Nop.Plugin.Misc.AzureBlob/Infrastructure/PluginNopStartup.cs
 Nop.Plugin.Misc.AzureBlob/Infrastructure/PluginNopStartup.cs
@@ -33940,6 +33958,10 @@ src/Plugins/Nop.Plugin.Widgets.GoogleAnalytics/Nop.Plugin.Widgets.GoogleAnalytic
 Plugins/Nop.Plugin.Widgets.GoogleAnalytics/Nop.Plugin.Widgets.GoogleAnalytics.csproj
 Nop.Plugin.Widgets.GoogleAnalytics/Nop.Plugin.Widgets.GoogleAnalytics.csproj
 Nop.Plugin.Widgets.GoogleAnalytics.csproj
+src/Plugins/Nop.Plugin.Misc.CloudflareImages/Notes.txt
+Plugins/Nop.Plugin.Misc.CloudflareImages/Notes.txt
+Nop.Plugin.Misc.CloudflareImages/Notes.txt
+Notes.txt
 src/Plugins/Nop.Plugin.Misc.CloudflareImages/Infrastructure/PluginNopStartup.cs
 Plugins/Nop.Plugin.Misc.CloudflareImages/Infrastructure/PluginNopStartup.cs
 Nop.Plugin.Misc.CloudflareImages/Infrastructure/PluginNopStartup.cs

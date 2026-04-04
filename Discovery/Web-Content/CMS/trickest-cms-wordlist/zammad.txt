@@ -1167,6 +1167,7 @@ lib/external_credential/base/channel_xoauth2.rb
 lib/external_credential/microsoft_base.rb
 tsconfig.base.json
 .git-hooks/pre_commit/eslint.rb
+.dev/updatecli.yaml
 .dev/rubocop/rubocop_zammad.rb
 .dev/rubocop/cop/zammad/forbid_loofah_fragment.rb
 .dev/rubocop/cop/zammad/update_copyright.rb
@@ -1480,6 +1481,7 @@ db/migrate/20210918163819_create_knowledge_base_permissions.rb
 db/migrate/20230414112710_issue4573_organization_field_database_length_missmatches_object_maxlength.rb
 db/migrate/20170113000002_slack_group_config_issue_587.rb
 db/migrate/20181030000001_setting_add_placetel1.rb
+db/migrate/20260325145325_issue5762_add_analytics_stats_reset_at_to_ai_text_tools.rb
 db/migrate/20220124141828_overview_updates.rb
 db/migrate/20241113154014_issue5409_wrong_db_column_array_type.rb
 db/migrate/20221213145618_issue4411_setting_saml_custom_uid_attribute.rb
@@ -3751,6 +3753,7 @@ spec/services/service/ai/analytics/upsert_usage_spec.rb
 spec/services/service/ai/analytics/generate_report/errors_spec.rb
 spec/services/service/ai/analytics/generate_report/with_usages_spec.rb
 spec/services/service/ai/analytics/generate_report/ordering_examples.rb
+spec/services/service/ai/analytics/aggregate_satisfaction_ratio_spec.rb
 spec/services/service/ai/ticket/pre_process_article_content_spec.rb
 spec/services/service/execute_locked_block_spec.rb
 spec/services/service/external_data_source/preview_spec.rb
@@ -4882,6 +4885,7 @@ spec/models/concerns/can_csv_import_organization_examples.rb
 spec/models/concerns/has_optional_groups_examples.rb
 spec/models/concerns/has_collection_update_examples.rb
 spec/models/concerns/can_be_imported_examples.rb
+spec/models/concerns/perform_changes/action/attribute_updates_spec.rb
 spec/models/concerns/checks_core_workflow_examples.rb
 spec/models/concerns/has_object_manager_attributes_examples.rb
 spec/models/concerns/has_history_examples.rb
@@ -4951,6 +4955,7 @@ spec/models/ai/text_tool_spec.rb
 spec/models/ai/stored_results_spec.rb
 spec/models/ai/agent/type_spec.rb
 spec/models/ai/agent/type/ticket_group_dispatcher_spec.rb
+spec/models/ai/agent/type/ticket_text_extractor_spec.rb
 spec/models/ai/agent/type/ticket_categorizer_spec.rb
 spec/models/ai/analytics/run_spec.rb
 spec/models/ai/analytics/usage_spec.rb
@@ -5242,6 +5247,8 @@ eslint.config.ts
 browserlist
 pnpm-lock.yaml
 Rakefile
+.claude/hooks/lint-after-edit.sh
+.claude/settings.json
 Dockerfile
 .npmrc
 tsconfig.json
@@ -5596,8 +5603,10 @@ app/frontend/shared/form/features/__tests__/formUpdaterTrigger.spec.ts
 app/frontend/shared/form/features/__tests__/hideField.spec.ts
 app/frontend/shared/form/features/formUpdaterTrigger.ts
 app/frontend/shared/form/features/formLocaleDir.ts
+app/frontend/shared/form/features/defaultEmptyValue.ts
 app/frontend/shared/form/features/addOrRemoveMissingEntityObjectOption.ts
 app/frontend/shared/form/features/addSubmitEvent.ts
+app/frontend/shared/form/features/defaultEmptyValueArray.ts
 app/frontend/shared/form/features/defaultEmptyValueString.ts
 app/frontend/shared/form/features/translateWrapperProps.ts
 app/frontend/shared/form/features/setPopulatedOnWebkitAutofill.ts
@@ -5850,6 +5859,8 @@ app/frontend/shared/components/Form/initializeFieldEditor.ts
 app/frontend/shared/components/Form/composables/useValue.ts
 app/frontend/shared/components/Form/composables/useClearFormInput.ts
 app/frontend/shared/components/Form/composables/useFileUploadProcessing.ts
+app/frontend/shared/components/Form/plugins/__tests__/initializeFieldInitialValuesCleanupPlugin.spec.ts
+app/frontend/shared/components/Form/plugins/initializeFieldInitialValuesCleanupPlugin.ts
 app/frontend/shared/components/Form/plugins/addTranslationFunctionPlugin.ts
 app/frontend/shared/components/Form/FormFieldLink.vue
 app/frontend/shared/components/Form/FormGroup.vue
@@ -10361,6 +10372,7 @@ app/assets/javascripts/app/views/ticket_zoom/sidebar_idoit.jst.eco
 app/assets/javascripts/app/views/ticket_zoom/sidebar_article_attachment.jst.eco
 app/assets/javascripts/app/views/ai/provider_logs.jst.eco
 app/assets/javascripts/app/views/ai/missing_provider_alert.jst.eco
+app/assets/javascripts/app/views/ai/text_tool_feedback.jst.eco
 app/assets/javascripts/app/views/ai/provider.jst.eco
 app/assets/javascripts/app/views/ai/ticket_summary.jst.eco
 app/assets/javascripts/app/views/ai/ai_feedback_widget.jst.eco
@@ -10548,6 +10560,7 @@ app/services/service/ai/agent/run.rb
 app/services/service/ai/analytics/generate_report/errors.rb
 app/services/service/ai/analytics/generate_report/base.rb
 app/services/service/ai/analytics/generate_report/with_usages.rb
+app/services/service/ai/analytics/aggregate_satisfaction_ratio.rb
 app/services/service/ai/analytics/upsert_usage.rb
 app/services/service/ai/ticket/pre_process_article_content.rb
 app/services/service/link/list.rb
@@ -11264,6 +11277,7 @@ app/models/ai/agent/type/ticket_title_rewriter.rb
 app/models/ai/agent/type/ticket_categorizer.rb
 app/models/ai/agent/type/ticket_prioritizer.rb
 app/models/ai/agent/type/ticket_group_dispatcher.rb
+app/models/ai/agent/type/ticket_text_extractor.rb
 app/models/ai/agent/type/concerns/has_object_attribute_list.rb
 app/models/ai/agent/type/custom_ai_agent.rb
 app/models/ai/agent.rb

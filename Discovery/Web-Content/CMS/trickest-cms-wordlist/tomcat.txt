@@ -444,6 +444,7 @@ test/org/apache/catalina/valves/TestAccessLogValve.java
 test/org/apache/catalina/valves/TestPersistentValve.java
 test/org/apache/catalina/valves/TestCrawlerSessionManagerValve.java
 test/org/apache/catalina/valves/TestLoadBalancerDrainingValve.java
+test/org/apache/catalina/valves/TestJsonErrorReportValve.java
 test/org/apache/catalina/valves/TestParameterLimitValve.java
 test/org/apache/catalina/valves/TestAbstractAccessLogValveEscape.java
 test/org/apache/catalina/valves/TestParameterLimitValveConfig.java
@@ -667,6 +668,7 @@ test/org/apache/tomcat/unittest/TesterHost.java
 test/org/apache/tomcat/unittest/TesterContext.java
 test/org/apache/tomcat/unittest/TesterResponse.java
 test/org/apache/tomcat/security/TestSecurity2017Ocsp.java
+test/org/apache/tomcat/security/TestSecurity2018.java
 test/org/apache/tomcat/security/TestSecurity2023.java
 test/org/apache/tomcat/security/TestSecurity2025Http2.java
 test/org/apache/tomcat/websocket/TestWebSocketFrameClient.java
@@ -783,6 +785,7 @@ test/org/apache/tomcat/util/net/ocsp/ocsp-responder.lock
 test/org/apache/tomcat/util/net/ocsp/TestOcspEnabled.java
 test/org/apache/tomcat/util/net/ocsp/TestOcspSoftFailTryLater.java
 test/org/apache/tomcat/util/net/ocsp/TestOcspTimeout.java
+test/org/apache/tomcat/util/net/ocsp/TestOcspSoftFailInternalError.java
 test/org/apache/tomcat/util/net/ocsp/OcspBaseTest.java
 test/org/apache/tomcat/util/net/ocsp/TesterOcspResponder.java
 test/org/apache/tomcat/util/net/ocsp/TesterOcspResponderNoResponse.java
