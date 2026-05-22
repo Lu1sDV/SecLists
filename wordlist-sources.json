@@ -1,0 +1,1561 @@
+{
+  "_metadata": {
+    "version": "1.0",
+    "created": "2026-05-21",
+    "description": "Comprehensive catalogue of wordlist sources for security testing and fuzzing",
+    "total_entries": 75,
+    "total_approx_lines": 88019872,
+    "total_approx_size_mb": 1317.258,
+    "sources_count": 18,
+    "sources": [
+      "Bo0oM/fuzz.txt",
+      "SecLists/local",
+      "TheKingOfDuck/fuzzDicts",
+      "assetnote",
+      "carlospolop/Auto_Wordlists",
+      "chrislockard/api_wordlist",
+      "danielmiessler/RobotsDisallowed",
+      "fuzzdb-project/fuzzdb",
+      "hAPI-hacker/Hacking-APIs",
+      "hannob/snallygaster",
+      "kkrypt0nn/wordlists",
+      "maurosoria/dirsearch",
+      "nickvdyck/leaky-paths",
+      "projectdiscovery/fuzzing-templates",
+      "random-robbie/bruteforce-lists",
+      "six2dez/OneListForAll",
+      "swisskyrepo/PayloadsAllTheThings",
+      "the-xentropy/samlists"
+    ],
+    "categories": {
+      "extensions": 3,
+      "subdomains": 4,
+      "api": 12,
+      "files": 18,
+      "directories": 27,
+      "parameters": 4,
+      "payloads": 2,
+      "blacklist": 3
+    },
+    "quality_distribution": {
+      "high": 66,
+      "medium": 7
+    },
+    "output_targets": [
+      "mega-fuzz-api",
+      "mega-fuzz-directories",
+      "mega-fuzz-extensions",
+      "mega-fuzz-files",
+      "mega-fuzz-parameters",
+      "mega-fuzz-payloads",
+      "mega-fuzz-subdomains"
+    ]
+  },
+  "entries": [
+    {
+      "id": "entry-0001",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_2026_04_27.txt",
+      "filename": "httparchive_aspx_asp_cfm_svc_ashx_asmx_2026_04_27.txt",
+      "category": "extensions",
+      "subcategory": "httparchive",
+      "description": "ASP/ASPX/CFM server-side extensions from HTTP Archive",
+      "approx_lines": 78457,
+      "approx_size_mb": 1.6,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "asp",
+        "aspx",
+        "cfm",
+        "web-extensions"
+      ],
+      "output_target": [
+        "mega-fuzz-extensions"
+      ]
+    },
+    {
+      "id": "entry-0002",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_subdomains_2026_04_27.txt",
+      "filename": "httparchive_subdomains_2026_04_27.txt",
+      "category": "subdomains",
+      "subcategory": "httparchive",
+      "description": "3.2M subdomains from HTTP Archive crawl",
+      "approx_lines": 3233656,
+      "approx_size_mb": 46.6,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "subdomains",
+        "dns"
+      ],
+      "output_target": [
+        "mega-fuzz-subdomains"
+      ]
+    },
+    {
+      "id": "entry-0003",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_apiroutes_2026_04_27.txt",
+      "filename": "httparchive_apiroutes_2026_04_27.txt",
+      "category": "api",
+      "subcategory": "httparchive",
+      "description": "API routes and endpoints from HTTP Archive",
+      "approx_lines": 368955,
+      "approx_size_mb": 10.8,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "api",
+        "endpoints"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0004",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_php_2026_04_27.txt",
+      "filename": "httparchive_php_2026_04_27.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "PHP files and endpoints from HTTP Archive",
+      "approx_lines": 176457,
+      "approx_size_mb": 3.3,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "php",
+        "web-extensions"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0005",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_html_htm_2026_04_27.txt",
+      "filename": "httparchive_html_htm_2026_04_27.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "HTML/HTM files from HTTP Archive",
+      "approx_lines": 736761,
+      "approx_size_mb": 19.7,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "html",
+        "web-extensions"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0006",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_jsp_jspa_do_action_2026_04_27.txt",
+      "filename": "httparchive_jsp_jspa_do_action_2026_04_27.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "JSP/JSPA/DO/ACTION files from HTTP Archive",
+      "approx_lines": 20341,
+      "approx_size_mb": 0.35,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "jsp",
+        "java",
+        "web-extensions"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0007",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_xml_2026_04_27.txt",
+      "filename": "httparchive_xml_2026_04_27.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "XML files from HTTP Archive",
+      "approx_lines": 10499,
+      "approx_size_mb": 0.19,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "xml",
+        "web-extensions"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0008",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_txt_2026_04_27.txt",
+      "filename": "httparchive_txt_2026_04_27.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "TXT files from HTTP Archive",
+      "approx_lines": 17990,
+      "approx_size_mb": 0.4,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "txt",
+        "web-extensions"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0009",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_directories_1m_2026_04_27.txt",
+      "filename": "httparchive_directories_1m_2026_04_27.txt",
+      "category": "directories",
+      "subcategory": "httparchive",
+      "description": "Directories from top 1M sites in HTTP Archive",
+      "approx_lines": 700520,
+      "approx_size_mb": 19.4,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "directories",
+        "web-discovery"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0010",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_js_2026_04_27.txt",
+      "filename": "httparchive_js_2026_04_27.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "JavaScript files from HTTP Archive - 3.5M entries",
+      "approx_lines": 3502739,
+      "approx_size_mb": 66.3,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "javascript",
+        "js",
+        "web-extensions"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0011",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_parameters_top_1m_2026_04_27.txt",
+      "filename": "httparchive_parameters_top_1m_2026_04_27.txt",
+      "category": "parameters",
+      "subcategory": "httparchive",
+      "description": "URL parameters from top 1M sites",
+      "approx_lines": 383657,
+      "approx_size_mb": 4.3,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "parameters",
+        "query-strings"
+      ],
+      "output_target": [
+        "mega-fuzz-parameters"
+      ]
+    },
+    {
+      "id": "entry-0012",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/automated/httparchive_cgi_pl_2026_04_27.txt",
+      "filename": "httparchive_cgi_pl_2026_04_27.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "CGI/Perl scripts from HTTP Archive",
+      "approx_lines": 11714,
+      "approx_size_mb": 0.35,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "cgi",
+        "perl",
+        "web-extensions"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0013",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/php.txt",
+      "filename": "php.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "Comprehensive PHP file collection from GitHub BigQuery",
+      "approx_lines": 3174758,
+      "approx_size_mb": 81.3,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "php"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0014",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/html.txt",
+      "filename": "html.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "HTML file collection from GitHub BigQuery",
+      "approx_lines": 4227526,
+      "approx_size_mb": 107.7,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "html"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0015",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/dot_filenames.txt",
+      "filename": "dot_filenames.txt",
+      "category": "files",
+      "subcategory": "curated",
+      "description": "Dot files (dotfiles) from GitHub BigQuery",
+      "approx_lines": 3191712,
+      "approx_size_mb": 71.3,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "dotfiles"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0016",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/aspx_lowercase.txt",
+      "filename": "aspx_lowercase.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "ASPX lowercase files from GitHub BigQuery",
+      "approx_lines": 80293,
+      "approx_size_mb": 4.4,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "aspx"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0017",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/asp_lowercase.txt",
+      "filename": "asp_lowercase.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "ASP lowercase files from GitHub BigQuery",
+      "approx_lines": 24074,
+      "approx_size_mb": 1.1,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "asp"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0018",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/wordlist_with_underscores.txt",
+      "filename": "wordlist_with_underscores.txt",
+      "category": "directories",
+      "subcategory": "curated",
+      "description": "Words with underscores from GitHub",
+      "approx_lines": 2674434,
+      "approx_size_mb": 38.5,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "words"
+      ],
+      "output_target": [
+        "mega-fuzz-directories",
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0019",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/wordlist_no_underscores.txt",
+      "filename": "wordlist_no_underscores.txt",
+      "category": "directories",
+      "subcategory": "curated",
+      "description": "Words without underscores from GitHub",
+      "approx_lines": 1916730,
+      "approx_size_mb": 25.5,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "words"
+      ],
+      "output_target": [
+        "mega-fuzz-directories",
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0020",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/best-dns-wordlist.txt",
+      "filename": "best-dns-wordlist.txt",
+      "category": "subdomains",
+      "subcategory": "dns",
+      "description": "10M subdomain wordlist for DNS bruteforce",
+      "approx_lines": 9996122,
+      "approx_size_mb": 139.0,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "subdomains",
+        "dns"
+      ],
+      "output_target": [
+        "mega-fuzz-subdomains"
+      ]
+    },
+    {
+      "id": "entry-0021",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/2m-subdomains.txt",
+      "filename": "2m-subdomains.txt",
+      "category": "subdomains",
+      "subcategory": "dns",
+      "description": "2M subdomains from GitHub dataset",
+      "approx_lines": 2167059,
+      "approx_size_mb": 28.0,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "subdomains",
+        "dns"
+      ],
+      "output_target": [
+        "mega-fuzz-subdomains"
+      ]
+    },
+    {
+      "id": "entry-0022",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/xml_filenames.txt",
+      "filename": "xml_filenames.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "XML file collection from GitHub",
+      "approx_lines": 2270059,
+      "approx_size_mb": 50.8,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "xml"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0023",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/manual/phpmillion.txt",
+      "filename": "phpmillion.txt",
+      "category": "files",
+      "subcategory": "technology-specific",
+      "description": "1M PHP files from GitHub",
+      "approx_lines": 1000000,
+      "approx_size_mb": 55.1,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "php"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0024",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/kiterunner/routes-large.kite.tar.gz",
+      "filename": "routes-large.kite.tar.gz",
+      "category": "api",
+      "subcategory": "kiterunner-binary",
+      "description": "KiteRunner binary route database (478K API routes) \u2014 requires kiterunner tool or conversion to plain text; also available as swagger-wordlist.txt",
+      "approx_lines": 139983,
+      "approx_size_mb": 34.7,
+      "quality": "medium",
+      "update_frequency": "static",
+      "tags": [
+        "api",
+        "kiterunner",
+        "routes"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0025",
+      "source": "assetnote",
+      "source_url": "https://wordlists-cdn.assetnote.io/data/kiterunner/swagger-wordlist.txt",
+      "filename": "swagger-wordlist.txt",
+      "category": "api",
+      "subcategory": "swagger",
+      "description": "Swagger/OpenAPI endpoints wordlist for API discovery - 958k entries",
+      "approx_lines": 958872,
+      "approx_size_mb": 27.2,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "api",
+        "swagger",
+        "openapi"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0026",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/raft-large-directories.txt",
+      "filename": "raft-large-directories.txt",
+      "category": "directories",
+      "subcategory": "raft-large",
+      "description": "Raft - Large directories wordlist",
+      "approx_lines": 62283,
+      "approx_size_mb": 0.53,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "directories",
+        "raft-large"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0027",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/raft-large-files.txt",
+      "filename": "raft-large-files.txt",
+      "category": "files",
+      "subcategory": "raft-large",
+      "description": "Raft - Large files wordlist",
+      "approx_lines": 37042,
+      "approx_size_mb": 0.48,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "files",
+        "raft-large"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0028",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/raft-large-words.txt",
+      "filename": "raft-large-words.txt",
+      "category": "directories",
+      "subcategory": "raft-large",
+      "description": "Raft - Large words for fuzzing",
+      "approx_lines": 119600,
+      "approx_size_mb": 1.0,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "directories",
+        "raft-large"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0029",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/combined_directories.txt",
+      "filename": "combined_directories.txt",
+      "category": "directories",
+      "subcategory": "combined",
+      "description": "Combined directory wordlist",
+      "approx_lines": 30000,
+      "approx_size_mb": 0.24,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "directories",
+        "combined"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0030",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/big.txt",
+      "filename": "big.txt",
+      "category": "directories",
+      "subcategory": "big",
+      "description": "Big wordlist for directories",
+      "approx_lines": 20000,
+      "approx_size_mb": 0.15,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "directories",
+        "big"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0031",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/common.txt",
+      "filename": "common.txt",
+      "category": "directories",
+      "subcategory": "common",
+      "description": "Common directories wordlist",
+      "approx_lines": 4614,
+      "approx_size_mb": 0.03,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "directories",
+        "common"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0032",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/quickhits.txt",
+      "filename": "quickhits.txt",
+      "category": "directories",
+      "subcategory": "quickhits",
+      "description": "Quick hits - commonly vulnerable paths",
+      "approx_lines": 2609,
+      "approx_size_mb": 0.02,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "directories",
+        "quickhits"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0033",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/api/api-endpoints.txt",
+      "filename": "api-endpoints.txt",
+      "category": "api",
+      "subcategory": "endpoints",
+      "description": "API endpoints from real-world assessment",
+      "approx_lines": 10000,
+      "approx_size_mb": 0.15,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "api",
+        "endpoints"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0034",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/api/api-seen-in-wild.txt",
+      "filename": "api-seen-in-wild.txt",
+      "category": "api",
+      "subcategory": "seen-in-wild",
+      "description": "API endpoints seen in the wild",
+      "approx_lines": 15000,
+      "approx_size_mb": 0.2,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "api",
+        "seen-in-wild"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0035",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/api/api-endpoints-res.txt",
+      "filename": "api-endpoints-res.txt",
+      "category": "api",
+      "subcategory": "endpoints-reserved",
+      "description": "Reserved API endpoints",
+      "approx_lines": 5000,
+      "approx_size_mb": 0.08,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "api",
+        "endpoints-reserved"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0036",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/graphql.txt",
+      "filename": "graphql.txt",
+      "category": "api",
+      "subcategory": "graphql",
+      "description": "GraphQL endpoints and queries",
+      "approx_lines": 1000,
+      "approx_size_mb": 0.01,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "api",
+        "graphql"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0037",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/burp-parameter-names.txt",
+      "filename": "burp-parameter-names.txt",
+      "category": "parameters",
+      "subcategory": "burp",
+      "description": "Parameter names from Burp Suite",
+      "approx_lines": 2000,
+      "approx_size_mb": 0.02,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "parameters",
+        "burp"
+      ],
+      "output_target": [
+        "mega-fuzz-parameters"
+      ]
+    },
+    {
+      "id": "entry-0038",
+      "source": "SecLists/local",
+      "source_url": "file:///home/x/SecLists/Discovery/Web-Content/web-extensions.txt",
+      "filename": "web-extensions.txt",
+      "category": "extensions",
+      "subcategory": "web",
+      "description": "Common web file extensions",
+      "approx_lines": 600,
+      "approx_size_mb": 0.01,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "extensions",
+        "web"
+      ],
+      "output_target": [
+        "mega-fuzz-extensions"
+      ]
+    },
+    {
+      "id": "entry-0039",
+      "source": "kkrypt0nn/wordlists",
+      "source_url": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/discovery/swagger.txt",
+      "filename": "swagger.txt",
+      "category": "api",
+      "subcategory": "api",
+      "description": "Swagger/OpenAPI endpoints",
+      "approx_lines": 5000,
+      "approx_size_mb": 0.08,
+      "quality": "high",
+      "update_frequency": "weekly",
+      "tags": [
+        "api",
+        "swagger"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0040",
+      "source": "kkrypt0nn/wordlists",
+      "source_url": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/discovery/directory_list_2.3_medium.txt",
+      "filename": "directory_list_2.3_medium.txt",
+      "category": "directories",
+      "subcategory": "api",
+      "description": "Directory list 2.3 medium",
+      "approx_lines": 30000,
+      "approx_size_mb": 0.24,
+      "quality": "high",
+      "update_frequency": "weekly",
+      "tags": [
+        "directories"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0041",
+      "source": "kkrypt0nn/wordlists",
+      "source_url": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/discovery/apache.txt",
+      "filename": "apache.txt",
+      "category": "directories",
+      "subcategory": "framework-specific",
+      "description": "Apache specific paths",
+      "approx_lines": 2000,
+      "approx_size_mb": 0.02,
+      "quality": "high",
+      "update_frequency": "weekly",
+      "tags": [
+        "apache",
+        "directories"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0042",
+      "source": "kkrypt0nn/wordlists",
+      "source_url": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/discovery/joomla.txt",
+      "filename": "joomla.txt",
+      "category": "directories",
+      "subcategory": "framework-specific",
+      "description": "Joomla CMS specific paths",
+      "approx_lines": 3000,
+      "approx_size_mb": 0.03,
+      "quality": "high",
+      "update_frequency": "weekly",
+      "tags": [
+        "joomla",
+        "cms"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0043",
+      "source": "kkrypt0nn/wordlists",
+      "source_url": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/discovery/wordpress.txt",
+      "filename": "wordpress.txt",
+      "category": "directories",
+      "subcategory": "framework-specific",
+      "description": "WordPress specific paths",
+      "approx_lines": 2500,
+      "approx_size_mb": 0.02,
+      "quality": "high",
+      "update_frequency": "weekly",
+      "tags": [
+        "wordpress",
+        "cms"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0044",
+      "source": "kkrypt0nn/wordlists",
+      "source_url": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/discovery/lfi_unix.txt",
+      "filename": "lfi_unix.txt",
+      "category": "payloads",
+      "subcategory": "lfi",
+      "description": "Unix LFI paths",
+      "approx_lines": 1500,
+      "approx_size_mb": 0.02,
+      "quality": "high",
+      "update_frequency": "weekly",
+      "tags": [
+        "lfi",
+        "unix",
+        "payloads"
+      ],
+      "output_target": [
+        "mega-fuzz-payloads"
+      ]
+    },
+    {
+      "id": "entry-0045",
+      "source": "kkrypt0nn/wordlists",
+      "source_url": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/discovery/lfi_windows.txt",
+      "filename": "lfi_windows.txt",
+      "category": "payloads",
+      "subcategory": "lfi",
+      "description": "Windows LFI paths",
+      "approx_lines": 1200,
+      "approx_size_mb": 0.02,
+      "quality": "high",
+      "update_frequency": "weekly",
+      "tags": [
+        "lfi",
+        "windows",
+        "payloads"
+      ],
+      "output_target": [
+        "mega-fuzz-payloads"
+      ]
+    },
+    {
+      "id": "entry-0046",
+      "source": "six2dez/OneListForAll",
+      "source_url": "https://raw.githubusercontent.com/six2dez/OneListForAll/master/onelistforallshort.txt",
+      "filename": "onelistforallshort.txt",
+      "category": "directories",
+      "subcategory": "combined",
+      "description": "OneListForAll short version - combined directory/file wordlist optimized for speed",
+      "approx_lines": 100000,
+      "approx_size_mb": 1.2,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "directories",
+        "files",
+        "combined"
+      ],
+      "output_target": [
+        "mega-fuzz-directories",
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0047",
+      "source": "six2dez/OneListForAll",
+      "source_url": "https://raw.githubusercontent.com/six2dez/OneListForAll/master/onelistforallmicro.txt",
+      "filename": "onelistforallmicro.txt",
+      "category": "directories",
+      "subcategory": "combined",
+      "description": "OneListForAll micro version - smallest combined wordlist for quick scans",
+      "approx_lines": 50000,
+      "approx_size_mb": 0.6,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "directories",
+        "files",
+        "combined"
+      ],
+      "output_target": [
+        "mega-fuzz-directories",
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0048",
+      "source": "maurosoria/dirsearch",
+      "source_url": "https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/400_blacklist.txt",
+      "filename": "400_blacklist.txt",
+      "category": "blacklist",
+      "subcategory": "blacklist",
+      "description": "HTTP 400 response blacklist for dirsearch \u2014 used to filter false positives, not as fuzz input",
+      "approx_lines": 100,
+      "approx_size_mb": 0.001,
+      "quality": "medium",
+      "update_frequency": "monthly",
+      "tags": [
+        "blacklist",
+        "status"
+      ],
+      "output_target": []
+    },
+    {
+      "id": "entry-0049",
+      "source": "maurosoria/dirsearch",
+      "source_url": "https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/403_blacklist.txt",
+      "filename": "403_blacklist.txt",
+      "category": "blacklist",
+      "subcategory": "blacklist",
+      "description": "HTTP 403 response blacklist for dirsearch \u2014 used to filter false positives, not as fuzz input",
+      "approx_lines": 100,
+      "approx_size_mb": 0.001,
+      "quality": "medium",
+      "update_frequency": "monthly",
+      "tags": [
+        "blacklist",
+        "status"
+      ],
+      "output_target": []
+    },
+    {
+      "id": "entry-0050",
+      "source": "maurosoria/dirsearch",
+      "source_url": "https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/500_blacklist.txt",
+      "filename": "500_blacklist.txt",
+      "category": "blacklist",
+      "subcategory": "blacklist",
+      "description": "HTTP 500 response blacklist for dirsearch \u2014 used to filter false positives, not as fuzz input",
+      "approx_lines": 100,
+      "approx_size_mb": 0.001,
+      "quality": "medium",
+      "update_frequency": "monthly",
+      "tags": [
+        "blacklist",
+        "status"
+      ],
+      "output_target": []
+    },
+    {
+      "id": "entry-0051",
+      "source": "maurosoria/dirsearch",
+      "source_url": "https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt",
+      "filename": "dicc.txt",
+      "category": "directories",
+      "subcategory": "wordlist",
+      "description": "Dirsearch community dictionary",
+      "approx_lines": 50000,
+      "approx_size_mb": 0.6,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "directories"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0052",
+      "source": "Bo0oM/fuzz.txt",
+      "source_url": "https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/fuzz.txt",
+      "filename": "fuzz.txt",
+      "category": "directories",
+      "subcategory": "fuzzing",
+      "description": "General fuzzing wordlist for directory/file discovery",
+      "approx_lines": 60000,
+      "approx_size_mb": 0.8,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "directories",
+        "fuzzing"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0053",
+      "source": "TheKingOfDuck/fuzzDicts",
+      "source_url": "https://raw.githubusercontent.com/TheKingOfDuck/fuzzDicts/master/apiDict/api.txt",
+      "filename": "api.txt",
+      "category": "api",
+      "subcategory": "fuzzing",
+      "description": "API fuzzing dictionary",
+      "approx_lines": 20000,
+      "approx_size_mb": 0.25,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "api"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0054",
+      "source": "TheKingOfDuck/fuzzDicts",
+      "source_url": "https://raw.githubusercontent.com/TheKingOfDuck/fuzzDicts/master/directoryDicts/Filenames_or_Directories_All.txt",
+      "filename": "Filenames_or_Directories_All.txt",
+      "category": "directories",
+      "subcategory": "fuzzing",
+      "description": "All filenames and directories",
+      "approx_lines": 50000,
+      "approx_size_mb": 0.6,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "directories",
+        "files"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0055",
+      "source": "TheKingOfDuck/fuzzDicts",
+      "source_url": "https://raw.githubusercontent.com/TheKingOfDuck/fuzzDicts/master/directoryDicts/top7000.txt",
+      "filename": "top7000.txt",
+      "category": "directories",
+      "subcategory": "fuzzing",
+      "description": "Top 7000 directories",
+      "approx_lines": 7000,
+      "approx_size_mb": 0.08,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "directories"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0056",
+      "source": "TheKingOfDuck/fuzzDicts",
+      "source_url": "https://raw.githubusercontent.com/TheKingOfDuck/fuzzDicts/master/directoryDicts/php/top3000.txt",
+      "filename": "top3000.txt",
+      "category": "extensions",
+      "subcategory": "fuzzing",
+      "description": "Top PHP files",
+      "approx_lines": 3000,
+      "approx_size_mb": 0.04,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "php"
+      ],
+      "output_target": [
+        "mega-fuzz-extensions"
+      ]
+    },
+    {
+      "id": "entry-0057",
+      "source": "TheKingOfDuck/fuzzDicts",
+      "source_url": "https://raw.githubusercontent.com/TheKingOfDuck/fuzzDicts/master/directoryDicts/vuls/all.txt",
+      "filename": "all.txt",
+      "category": "directories",
+      "subcategory": "fuzzing",
+      "description": "Vulnerability-related paths",
+      "approx_lines": 15000,
+      "approx_size_mb": 0.2,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "vulnerabilities",
+        "payloads"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0058",
+      "source": "the-xentropy/samlists",
+      "source_url": "https://raw.githubusercontent.com/the-xentropy/samlists/main/sam-cc-parameters-lowercase-all.txt",
+      "filename": "sam-cc-parameters-lowercase-all.txt",
+      "category": "parameters",
+      "subcategory": "captured",
+      "description": "Common parameters from captured content (lowercase)",
+      "approx_lines": 464067,
+      "approx_size_mb": 4.6,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "parameters",
+        "ccparam"
+      ],
+      "output_target": [
+        "mega-fuzz-parameters"
+      ]
+    },
+    {
+      "id": "entry-0059",
+      "source": "the-xentropy/samlists",
+      "source_url": "https://raw.githubusercontent.com/the-xentropy/samlists/main/sam-cc-parameters-mixedcase-all.txt",
+      "filename": "sam-cc-parameters-mixedcase-all.txt",
+      "category": "parameters",
+      "subcategory": "captured",
+      "description": "Common parameters from captured content (mixedcase)",
+      "approx_lines": 504171,
+      "approx_size_mb": 5.0,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "parameters",
+        "ccparam"
+      ],
+      "output_target": [
+        "mega-fuzz-parameters"
+      ]
+    },
+    {
+      "id": "entry-0060",
+      "source": "the-xentropy/samlists",
+      "source_url": "https://raw.githubusercontent.com/the-xentropy/samlists/main/sam-gh-directories-lowercase-top100000.txt",
+      "filename": "sam-gh-directories-lowercase-top100000.txt",
+      "category": "directories",
+      "subcategory": "github",
+      "description": "Top 100k directories from GitHub (lowercase)",
+      "approx_lines": 1408647,
+      "approx_size_mb": 14.1,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "directories",
+        "github"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0061",
+      "source": "the-xentropy/samlists",
+      "source_url": "https://raw.githubusercontent.com/the-xentropy/samlists/main/sam-gh-directories-mixedcase-top100000.txt",
+      "filename": "sam-gh-directories-mixedcase-top100000.txt",
+      "category": "directories",
+      "subcategory": "github",
+      "description": "Top 100k directories from GitHub (mixedcase)",
+      "approx_lines": 1363694,
+      "approx_size_mb": 13.6,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "directories",
+        "github"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0062",
+      "source": "the-xentropy/samlists",
+      "source_url": "https://raw.githubusercontent.com/the-xentropy/samlists/main/sam-gh-files-lowercase-top1000000.txt",
+      "filename": "sam-gh-files-lowercase-top1000000.txt",
+      "category": "files",
+      "subcategory": "github",
+      "description": "Top 1M files from GitHub (lowercase)",
+      "approx_lines": 19942754,
+      "approx_size_mb": 199.4,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "files",
+        "github"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0063",
+      "source": "the-xentropy/samlists",
+      "source_url": "https://raw.githubusercontent.com/the-xentropy/samlists/main/sam-gh-files-mixedcase-top1000000.txt",
+      "filename": "sam-gh-files-mixedcase-top1000000.txt",
+      "category": "files",
+      "subcategory": "github",
+      "description": "Top 1M files from GitHub (mixedcase)",
+      "approx_lines": 19846923,
+      "approx_size_mb": 198.5,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "files",
+        "github"
+      ],
+      "output_target": [
+        "mega-fuzz-files"
+      ]
+    },
+    {
+      "id": "entry-0064",
+      "source": "nickvdyck/leaky-paths",
+      "source_url": "https://raw.githubusercontent.com/nickvdyck/leaky-paths/master/leaky-paths.txt",
+      "filename": "leaky-paths.txt",
+      "category": "directories",
+      "subcategory": "sensitive",
+      "description": "Paths known to leak sensitive information - discovered through real-world assessments",
+      "approx_lines": 1000,
+      "approx_size_mb": 0.015,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "sensitive",
+        "leaky",
+        "disclosure"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0065",
+      "source": "chrislockard/api_wordlist",
+      "source_url": "https://raw.githubusercontent.com/chrislockard/api_wordlist/master/api_seen_in_wild.txt",
+      "filename": "api_seen_in_wild.txt",
+      "category": "api",
+      "subcategory": "seen-in-wild",
+      "description": "API endpoints discovered in the wild from bug bounties and assessments",
+      "approx_lines": 30000,
+      "approx_size_mb": 0.4,
+      "quality": "high",
+      "update_frequency": "weekly",
+      "tags": [
+        "api",
+        "endpoints",
+        "real-world"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0066",
+      "source": "swisskyrepo/PayloadsAllTheThings",
+      "source_url": "https://raw.githubusercontent.com/swisskyrepo/PayloadsAllTheThings/master/Methodology%20and%20Resources/WordPress%20-%20Enum.md",
+      "filename": "wordpress-paths.txt",
+      "category": "directories",
+      "subcategory": "cms-specific",
+      "description": "WordPress specific paths and endpoints for discovery and exploitation",
+      "approx_lines": 5000,
+      "approx_size_mb": 0.08,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "wordpress",
+        "cms",
+        "paths"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0067",
+      "source": "fuzzdb-project/fuzzdb",
+      "source_url": "https://raw.githubusercontent.com/fuzzdb-project/fuzzdb/master/discovery/discovery-db.txt",
+      "filename": "discovery-db.txt",
+      "category": "directories",
+      "subcategory": "comprehensive",
+      "description": "FuzzDB - comprehensive fuzzing and discovery database",
+      "approx_lines": 40000,
+      "approx_size_mb": 0.5,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "fuzzing",
+        "discovery",
+        "payloads"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0068",
+      "source": "random-robbie/bruteforce-lists",
+      "source_url": "https://raw.githubusercontent.com/random-robbie/bruteforce-lists/master/best-dns-wordlist.txt",
+      "filename": "best-dns-wordlist.txt",
+      "category": "subdomains",
+      "subcategory": "dns",
+      "description": "Optimized DNS bruteforce wordlist for subdomain enumeration",
+      "approx_lines": 2000000,
+      "approx_size_mb": 25.0,
+      "quality": "high",
+      "update_frequency": "monthly",
+      "tags": [
+        "dns",
+        "subdomains",
+        "bruteforce"
+      ],
+      "output_target": [
+        "mega-fuzz-subdomains"
+      ]
+    },
+    {
+      "id": "entry-0069",
+      "source": "danielmiessler/RobotsDisallowed",
+      "source_url": "https://raw.githubusercontent.com/danielmiessler/RobotsDisallowed/master/top10000.txt",
+      "filename": "top10000.txt",
+      "category": "directories",
+      "subcategory": "robots-txt",
+      "description": "Top 10,000 disallowed paths from real-world robots.txt files \u2014 high-signal real-world directories",
+      "approx_lines": 10000,
+      "approx_size_mb": 0.1,
+      "quality": "high",
+      "update_frequency": "weekly",
+      "tags": [
+        "robots",
+        "discovery",
+        "sensitive"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0070",
+      "source": "projectdiscovery/fuzzing-templates",
+      "source_url": "https://raw.githubusercontent.com/projectdiscovery/fuzzing-templates/main/README.md",
+      "filename": "api-endpoints.yaml",
+      "category": "api",
+      "subcategory": "nuclei-template",
+      "description": "projectdiscovery/fuzzing-templates \u2014 nuclei YAML templates only, no extractable plain wordlist; excluded from output",
+      "approx_lines": 5000,
+      "approx_size_mb": 0.1,
+      "quality": "low",
+      "update_frequency": "weekly",
+      "tags": [
+        "api",
+        "fuzzing",
+        "templates"
+      ],
+      "output_target": []
+    },
+    {
+      "id": "entry-0071",
+      "source": "hannob/snallygaster",
+      "source_url": "https://raw.githubusercontent.com/hannob/snallygaster/master/snallygaster/fingerprints.json",
+      "filename": "fingerprints.json",
+      "category": "files",
+      "subcategory": "sensitive",
+      "description": "snallygaster fingerprints \u2014 embedded in Python source, not a plain wordlist; excluded from output",
+      "approx_lines": 10000,
+      "approx_size_mb": 0.5,
+      "quality": "low",
+      "update_frequency": "monthly",
+      "tags": [
+        "fingerprinting",
+        "applications",
+        "detection"
+      ],
+      "output_target": []
+    },
+    {
+      "id": "entry-0072",
+      "source": "carlospolop/Auto_Wordlists",
+      "source_url": "https://raw.githubusercontent.com/carlospolop/Auto_Wordlists/main/wordlists/bf_directories.txt",
+      "filename": "bf_directories.txt",
+      "category": "directories",
+      "subcategory": "generated",
+      "description": "Auto-generated directory wordlist from carlospolop/Auto_Wordlists brute-force collection",
+      "approx_lines": 50000,
+      "approx_size_mb": 0.5,
+      "quality": "medium",
+      "update_frequency": "monthly",
+      "tags": [
+        "generated",
+        "combinations",
+        "fuzzing"
+      ],
+      "output_target": [
+        "mega-fuzz-directories"
+      ]
+    },
+    {
+      "id": "entry-0073",
+      "source": "hAPI-hacker/Hacking-APIs",
+      "source_url": "https://raw.githubusercontent.com/hAPI-hacker/Hacking-APIs/main/Wordlists/api_superlist",
+      "filename": "api_superlist",
+      "category": "api",
+      "subcategory": "api-security",
+      "description": "Hacking-APIs superlist \u2014 curated general-purpose API endpoint wordlist",
+      "approx_lines": 1000,
+      "approx_size_mb": 0.02,
+      "quality": "high",
+      "update_frequency": "weekly",
+      "tags": [
+        "api",
+        "security",
+        "discovery"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0074",
+      "source": "hAPI-hacker/Hacking-APIs",
+      "source_url": "https://raw.githubusercontent.com/hAPI-hacker/Hacking-APIs/main/Wordlists/fintech_api",
+      "filename": "fintech_api",
+      "category": "api",
+      "subcategory": "sector-specific",
+      "description": "Sector-specific API endpoints for financial technology applications",
+      "approx_lines": 600,
+      "approx_size_mb": 0.01,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "api",
+        "fintech",
+        "finance",
+        "sector-specific"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    },
+    {
+      "id": "entry-0075",
+      "source": "hAPI-hacker/Hacking-APIs",
+      "source_url": "https://raw.githubusercontent.com/hAPI-hacker/Hacking-APIs/main/Wordlists/healthcare_api",
+      "filename": "healthcare_api",
+      "category": "api",
+      "subcategory": "sector-specific",
+      "description": "Sector-specific API endpoints for healthcare and medical applications",
+      "approx_lines": 200,
+      "approx_size_mb": 0.003,
+      "quality": "high",
+      "update_frequency": "static",
+      "tags": [
+        "api",
+        "healthcare",
+        "medical",
+        "sector-specific"
+      ],
+      "output_target": [
+        "mega-fuzz-api"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+name: Wordlist Aggregator - Build mega-fuzz wordlists
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'  # every Sunday at 03:00 UTC
+
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: 'Comma-separated targets to build (leave blank for all)'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Dry run (print stats, do not write files)'
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  build:
+    if: vars.RUN_UPDATERS == 1 || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build mega wordlists
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.targets }}" ]; then
+            ARGS="$ARGS --targets ${{ github.event.inputs.targets }}"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          python3 .bin/build_mega_wordlists.py $ARGS
+
+      - name: Commit files if changed
+        run: |
+          git add -N .
+          if [ -z "$(git ls-files --modified)" ]; then
+            echo "[+] No files were changed"
+          else
+            echo "[+] Files changed — committing..."
+            git add \
+              Discovery/Web-Content/mega-fuzz-directories.txt \
+              Discovery/Web-Content/mega-fuzz-files.txt \
+              Discovery/Web-Content/mega-fuzz-parameters.txt \
+              Discovery/Web-Content/mega-fuzz-extensions.txt \
+              Discovery/Web-Content/mega-fuzz-payloads.txt \
+              Discovery/Web-Content/api/mega-fuzz-api.txt \
+              Discovery/DNS/mega-fuzz-subdomains.txt \
+              wordlist-sources.json || true
+            git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY"
+            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git commit -m "[Github Action] Rebuilt mega-fuzz wordlists from all upstream sources."
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
